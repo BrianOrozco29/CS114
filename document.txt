@@ -1,0 +1,14 @@
+When considering choice of data structure use in  database
+system that manages customer accounts, we see that a data structure that
+has little concern for  cost of deletion, but is highly efficient for search
+and moderately efficient for insertion, should meet  resource constraints
+imposed by this problem. Records are accessible by unique account number
+(sometimes called an exact-match query). One data structure that meets
+se requirements is  hash table described in Chapter 9.4. Hash tables
+allow for extremely fast exact-match search. A record can be modified
+quickly when  modification does not affect its space requirements. Hash
+tables also support efficient insertion of new records. While deletions can
+also be supported efficiently,o many deletions lead some degradation
+in performance for  remaining operations. However,  hash table can
+be reorganized periodically restore  system peak efficiency. Such
+reorganization can occur offline so as not affect ATM transactions.
